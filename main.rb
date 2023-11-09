@@ -3,7 +3,7 @@ require_relative 'app'
 def main
   app = App.new
   puts 'Welcome to School Library App!'
-  puts
+  puts ' '
   loop do
     puts 'Please select an option by entering a number:'
     puts '1. List all books'
