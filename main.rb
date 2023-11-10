@@ -26,7 +26,7 @@ def main
     when 5
       app.create_rental
     when 6
-      app.list_rentals
+      app.list_rentals_id
     when 7
       break
     else
