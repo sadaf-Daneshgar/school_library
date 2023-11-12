@@ -5,6 +5,7 @@ AllCops:
     - 'Rakefile'
     - 'app.rb'
     - 'main.rb'
+    - 'refactor.rb'
     - 'node_modules/**/*'
 
   DisplayCopNames: true
