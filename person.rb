@@ -2,6 +2,7 @@ require_relative 'nameable'
 # for second day project
 require_relative 'rental'
 # for third day project
+require 'json'
 
 class Person < Nameable
   attr_accessor :name, :age, :rentals
