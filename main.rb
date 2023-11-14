@@ -5,6 +5,7 @@ require_relative 'refactor'
 def main
   app = App.new
   refactor = Refactor.new(app)
+  app.load_data
 
   puts 'Welcome to School Library App!'
   puts ' '
@@ -32,6 +33,10 @@ def main
     else
       puts 'Invalid option. Try again'
     end
+  end
+
+  at_exit do
+    app.save_data # Save data on exit
   end
 end
 

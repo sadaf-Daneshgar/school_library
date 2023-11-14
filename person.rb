@@ -41,4 +41,13 @@ class Person < Nameable
   def add_rental(date, book)
     Rental.new(date, book, self)
   end
+
+  def to_json(*_args)
+    {
+      id: @id,
+      name: @name,
+      age: @age,
+      class: self.class.to_s
+    }.to_json
+  end
 end
