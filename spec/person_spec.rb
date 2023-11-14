@@ -60,4 +60,15 @@ describe Person do
 
     expect(person.to_json).to eq(json_result)
   end
+
+  it 'adds rental and updates rentals array' do
+    book = double('book')
+    rental = double('rental')
+
+    allow(Rental).to receive(:new).and_return(rental)
+
+    person.add_rental('2023-01-01', book)
+
+    expect(person.rentals).to include(rental)
+  end
 end

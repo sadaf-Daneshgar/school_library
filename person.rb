@@ -40,7 +40,9 @@ class Person < Nameable
 
   # day 3 project
   def add_rental(date, book)
-    Rental.new(date, book, self)
+    rental = Rental.new(date, book, self)
+    @rentals << rental
+    rental
   end
 
   def to_json(*_args)
