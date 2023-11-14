@@ -1,4 +1,3 @@
-# refactor.rb
 class Refactor
   def initialize(app)
     @app = app
