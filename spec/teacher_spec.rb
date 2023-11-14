@@ -2,18 +2,18 @@ require 'rspec'
 require_relative '../teacher'
 
 describe Teacher do
-  let(:teacher) { Teacher.new(35, 'Mathematics', 'Jane Doe') }
+  let(:teacher) { Teacher.new(35, 'Ahmad', 'Ali') }
 
   it 'has an age' do
     expect(teacher.age).to eq(35)
   end
 
   it 'has a name' do
-    expect(teacher.name).to eq('Jane Doe')
+    expect(teacher.name).to eq('Ali')
   end
 
   it 'has a specialization' do
-    expect(teacher.specialization).to eq('Mathematics')
+    expect(teacher.specialization).to eq('Ahmad')
   end
 
   it 'can use services' do
@@ -21,9 +21,9 @@ describe Teacher do
   end
 
   it 'can have a different name' do
-    teacher.name = 'John Doe'
+    teacher.name = 'Ali'
 
-    expect(teacher.name).to eq('John Doe')
+    expect(teacher.name).to eq('Ali')
   end
 
   it 'can have a different specialization' do

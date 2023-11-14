@@ -3,14 +3,14 @@ require_relative '../student'
 
 describe Student do
   let(:classroom) { double('Classroom', students: []) }
-  let(:student) { Student.new(18, classroom, 'John Doe') }
+  let(:student) { Student.new(18, classroom, 'Ali') }
 
   it 'has an age' do
     expect(student.age).to eq(18)
   end
 
   it 'has a name' do
-    expect(student.name).to eq('John Doe')
+    expect(student.name).to eq('Ali')
   end
 
   it 'has a classroom' do
