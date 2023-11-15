@@ -23,4 +23,23 @@ RSpec.describe Solver do
       expect(subject.reverse('hello')).to eq('olleh')
     end
   end
+
+  # test for fizzbuzz method
+  describe '#fizzbuzz' do
+    it 'returns fizzbuzz when given 15' do
+      expect(subject.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+
+    it 'returns fizz when given 3' do
+      expect(subject.fizzbuzz(3)).to eq('fizz')
+    end
+
+    it 'returns buzz when given 5' do
+      expect(subject.fizzbuzz(5)).to eq('buzz')
+    end
+
+    it 'returns 2 when given 2' do
+      expect(subject.fizzbuzz(2)).to eq('2')
+    end
+  end
 end
