@@ -2,6 +2,7 @@ require_relative 'nameable'
 # for second day project
 require_relative 'rental'
 # for third day project
+require 'json'
 
 class Person < Nameable
   attr_accessor :name, :age, :rentals
@@ -39,7 +40,9 @@ class Person < Nameable
 
   # day 3 project
   def add_rental(date, book)
-    Rental.new(date, book, self)
+    rental = Rental.new(date, book, self)
+    @rentals << rental
+    rental
   end
 
   def to_json(*_args)
