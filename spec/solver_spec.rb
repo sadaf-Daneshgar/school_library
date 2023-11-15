@@ -2,6 +2,7 @@ require 'rspec'
 require_relative '../TDD/solver'
 
 RSpec.describe Solver do
+  # test for factorial method
   describe '#factorial' do
     it 'returns 1 when given 0' do
       expect(subject.factorial(0)).to eq(1)
@@ -13,6 +14,13 @@ RSpec.describe Solver do
 
     it 'raises an exception when given a negative number' do
       expect { subject.factorial(-1) }.to raise_error(RuntimeError)
+    end
+  end
+
+  # test for reverse method
+  describe '#reverse' do
+    it 'returns olleh when given hello' do
+      expect(subject.reverse('hello')).to eq('olleh')
     end
   end
 end
