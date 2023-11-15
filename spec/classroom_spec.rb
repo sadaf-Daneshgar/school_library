@@ -1,7 +1,5 @@
-# classroom_spec.rb
-
-require_relative '../classroom'
-require_relative '../student'
+require_relative '../Library/classroom'
+require_relative '../Library/student'
 
 RSpec.describe Classroom do
   describe '#initialize' do

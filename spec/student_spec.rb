@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../student'
+require_relative '../Library/student'
 
 describe Student do
   let(:classroom) { double('Classroom', students: []) }

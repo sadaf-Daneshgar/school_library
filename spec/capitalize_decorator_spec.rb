@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../capitalize_decorator'
+require_relative '../Library/capitalize_decorator'
 
 class TestNameable < Nameable
   def correct_name

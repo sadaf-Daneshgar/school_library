@@ -3,8 +3,8 @@ AllCops:
   Exclude:
     - 'Guardfile'
     - 'Rakefile'
-    - 'app.rb'
-    - 'main.rb'
+    - 'Library/app.rb'
+    - 'Library/main.rb'
     - 'refactor.rb'
     - 'node_modules/**/*'
 

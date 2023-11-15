@@ -53,7 +53,8 @@ class Refactor
     person_index = gets.chomp.to_i - 1
     print 'Date: '
     date = Date.parse(gets.chomp)
-    rental = Rental.new(date, @app.instance_variable_get(:@books)[book_index], @app.instance_variable_get(:@people)[person_index])
+    rental = Rental.new(date, @app.instance_variable_get(:@books)[book_index],
+                        @app.instance_variable_get(:@people)[person_index])
     @app.create_rental(rental)
   end
 

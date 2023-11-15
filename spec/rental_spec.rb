@@ -1,6 +1,6 @@
 require 'rspec'
-require_relative '../rental'
-require_relative '../person'
+require_relative '../Library/rental'
+require_relative '../Library/person'
 
 RSpec.describe Rental do
   let(:book_title) { 'English' }

@@ -1,4 +1,4 @@
-require_relative '../trimmer_decorator'
+require_relative '../Library/trimmer_decorator'
 require 'rspec'
 
 describe TrimmerDecorator do

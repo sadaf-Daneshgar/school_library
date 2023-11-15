@@ -1,4 +1,3 @@
-# main.rb
 require_relative 'app'
 require_relative 'refactor'
 

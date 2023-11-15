@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../nameable'
+require_relative '../Library/nameable'
 
 class TestNameable < Nameable
   def correct_name
