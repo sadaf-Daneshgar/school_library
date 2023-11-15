@@ -1,4 +1,5 @@
 class Solver
+  # factorial method
   def factorial(numb)
     if numb.zero?
       1
@@ -9,6 +10,7 @@ class Solver
     end
   end
 
+  # reverse method
   def reverse(word)
     word.reverse
   end
